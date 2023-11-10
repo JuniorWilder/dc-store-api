@@ -1,4 +1,5 @@
 import express from "express";
+import db from "./db/db.js";
 
 const app = express()
 
@@ -14,5 +15,5 @@ const HOST = 'localhost'
 const PORT = '5000'
 
 app.listen(PORT, () => {
-    console.log(`Servidor rodando em : http//${HOST}:${PORT}`);
+    console.log(`Servidor rodando em : http://${HOST}:${PORT}`);
 })
