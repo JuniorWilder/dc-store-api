@@ -3,6 +3,6 @@ export const DB_CONFIG = {
     port: 3307,
     user: 'root',
     pass: '1234',
-    db: 'dripstore',
-    dialect: 'mysql'
+    db: 'dripstore', // dripstore
+    dialect: 'mysql',
 }
