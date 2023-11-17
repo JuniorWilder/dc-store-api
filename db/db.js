@@ -1,7 +1,7 @@
 import { Sequelize } from "sequelize";
 import { DB_CONFIG } from "./config/config.js";
 
-const connection = new Sequelize(
+export const connection = new Sequelize(
     DB_CONFIG.db, 
     DB_CONFIG.user, 
     DB_CONFIG.pass, {
@@ -21,10 +21,3 @@ const connection = new Sequelize(
   } catch (error) {
     console.error('Unable to connect to the database:', error);
   }
-
-  const db = {}
-
-  db.Sequelize = Sequelize
-  db.connection = connection
-
-  export default db
