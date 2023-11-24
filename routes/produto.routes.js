@@ -9,7 +9,7 @@ export const routeProduto =  (app) => {
     router.post('/', produtoController.create)
 
     // Buscar todos os produtos
-    router.get('/', produtoController.deleteAll)
+    router.get('/', produtoController.findAll)
 
     // Buscar por id
     router.get('/:id', produtoController.findById)
