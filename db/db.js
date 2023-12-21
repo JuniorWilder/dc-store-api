@@ -3,7 +3,7 @@ import { DB_CONFIG } from "./config/config.js";
 
 // postgres://admin:ce4xiSNKYkil1QKqXpxKZLVf0Oj4VAT8@dpg-clkin8sjtl8s73e5tb0g-a.oregon-postgres.render.com/dc_oa42
 const URL_RENDER = `${DB_CONFIG.DIALECT}://${DB_CONFIG.USER}:${DB_CONFIG.PASS}@${DB_CONFIG.HOST}/${DB_CONFIG.DB}`
-console.log(`[URL_RENDER]`);
+console.log(`[URL_RENDER]: ${URL_RENDER}`);
 export const connection = new Sequelize(URL_RENDER,
   {
     pool: {
