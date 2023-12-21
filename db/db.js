@@ -18,7 +18,8 @@ export const connection = new Sequelize(URL_RENDER,
         rejectUnauthorized: false, //Configuração
       },
       keepAlive: true
-    }
+    },
+    ssl: true,
   });
 
 try {
